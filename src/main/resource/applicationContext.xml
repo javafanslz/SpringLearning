@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+     http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean class="com.spring.listener.EmailNotifier"/>
+    <bean id="stoneAxe" class="com.spring.beantest.impl.StoneAxe">
+    </bean>
+    <bean id="steelAxe" class="com.spring.beantest.impl.SteelAxe"></bean>
+    <bean id="chinese" class="com.spring.beantest.impl.Chinese">
+        <property name="axe" ref="steelAxe"/>
+    </bean>
+    <bean id="chieseConstruct" class="com.spring.beantest.impl.ChineseConstruct">
+        <constructor-arg ref="stoneAxe" index="0"></constructor-arg>
+        <constructor-arg value="李柱" index="1"></constructor-arg>
+    </bean>
+
+</beans>
