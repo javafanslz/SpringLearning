@@ -30,9 +30,10 @@ public enum  EnumWithConstruct {
     }
 
     public static void main(String[] args){
-        for(EnumWithConstruct construct:EnumWithConstruct.values()){
+     /*   for(EnumWithConstruct construct:EnumWithConstruct.values()){
             System.out.println(construct.getDesp());
-        }
+        }*/
+        System.out.println(EnumWithConstruct.EAST.getDesp());
     }
 
 }

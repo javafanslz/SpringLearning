@@ -1,5 +1,7 @@
 package com.java.clone;
 
+import java.io.*;
+
 /**
  * <dl>
  * <dt> Test</dt>
@@ -26,5 +28,6 @@ public class Test {
         System.out.println(body == body1);
         //如果要使Body对象在clone时进行深拷贝， 那么就要在Body的clone方法中，将源对象引用的Head对象也clone一份。
         System.out.println(body.head == body1.head);
+
     }
 }

@@ -1,5 +1,7 @@
 package com.java.lang.exception.string;
 
+import java.util.Arrays;
+
 /**
  * <dl>
  * <dt>StringTest</dt>
@@ -13,7 +15,10 @@ package com.java.lang.exception.string;
  */
 public class StringTest {
     public static void main(String[] args) {
-        String str = "abcde111";
-        System.out.println(str.substring(0,20));
+        /*String str = "a,b,c,,,";
+        System.out.println(str.split(",").length);*/
+        String str = "start";
+        Arrays.asList();
+
     }
 }
