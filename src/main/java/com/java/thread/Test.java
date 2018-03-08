@@ -12,4 +12,7 @@ package com.java.thread;
  * @author lizhu
  */
 public class Test {
+    /**
+     *
+     */
 }
