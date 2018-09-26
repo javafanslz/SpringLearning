@@ -7,7 +7,7 @@ import org.omg.PortableServer.THREAD_POLICY_ID;
  * <dt> MyThread</dt>
  * <dd>Description:</dd>
  * <dd>Copyright: Copyright (C) 2016</dd>
- * <dd>Company: é’ç‰›ï¼ˆåŒ—äº¬ï¼‰æŠ€æœ¯æœ‰é™å…¬å¸</dd>
+ * <dd>Company: ÇàÅ££¨±±¾©£©¼¼ÊõÓĞÏŞ¹«Ë¾</dd>
  * <dd>CreateDate:2018/3/1</dd>
  * </dl>
  *
@@ -20,7 +20,7 @@ public class MyThread extends Thread {
     public synchronized  void run(){
         if(count>0) {
             count--;
-            System.out.println("å½“å‰å€¼ä¸º"+count+"å½“å‰çº¿ç¨‹ä¸º"+Thread.currentThread().getName());
+            System.out.println("µ±Ç°ÖµÎª"+count+"µ±Ç°Ïß³ÌÎª"+Thread.currentThread().getName());
         }
     }
 

@@ -13,7 +13,12 @@ package com.java.thread;
  */
 public class ThreadTest {
     public static void main(String[] args){
-        Thread thread = new Thread();
-        thread.start();
+        Test test = new Test();
+       MoreSysThread moreSysThread = new MoreSysThread(test);
+       MoreSysThread2 moreSysThread2 = new MoreSysThread2(test);
+       moreSysThread.setName("t1");
+       moreSysThread2.setName("t2");
+       moreSysThread.start();
+       moreSysThread2.start();
     }
 }
