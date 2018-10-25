@@ -1,6 +1,8 @@
 package com.java.thread.juclock;
 
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.LockSupport;
 
 /**
  * <dl>
@@ -15,6 +17,13 @@ import java.util.concurrent.locks.Lock;
  */
 public class JucLockTest {
     public void test(){
+        AtomicInteger atomicInteger = new AtomicInteger();
+        //LockSupport lockSupport = new LockSupport();
+        System.out.println(System.nanoTime());
       Lock lock;
+    }
+
+    public static void main(String[] args){
+        System.out.println(System.nanoTime());
     }
 }

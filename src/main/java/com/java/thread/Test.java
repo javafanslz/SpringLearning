@@ -26,4 +26,12 @@ public class Test {
         Thread.sleep(3000);
         System.out.println(Thread.currentThread().getName()+"执行test2结束");
     }
+
+    public void f1(){
+        int i = 1;
+        i++;
+        int j=1;
+        ++j;
+
+    }
 }
