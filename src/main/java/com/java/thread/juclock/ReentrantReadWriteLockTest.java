@@ -27,11 +27,8 @@ public class ReentrantReadWriteLockTest {
          final int MAX_COUNT      = (1 << SHARED_SHIFT) - 1;
          final int EXCLUSIVE_MASK = (1 << SHARED_SHIFT) - 1;
          int c = 11;
-         c = c+SHARED_UNIT;
-        System.out.println(c>>>SHARED_SHIFT);
+         c = c + (2<<16);
+        System.out.println(c>>>16);
     }
 }
 
-class ReadDemo{
-
-}
